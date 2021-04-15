@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hw-04</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./images/sprite.svg" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="top-bar">
+        <span class="logo">journey</span>
+        <div class="topBar-icons">
+          <svg class="topBar__svg">
+            <use xlink:href="./images/sprite.svg#icon-calendar"></use>
+          </svg>
+          <svg class="topBar__svg">
+            <use xlink:href="./images/sprite.svg#icon-note-list"></use>
+          </svg>
+          <svg class="topBar__svg">
+            <use xlink:href="./images/sprite.svg#icon-compass2"></use>
+          </svg>
+          <span class="topBar-auth"
+            >Welcome, <a href="#">Log In</a> or <a href="#">Sign Up</a>
+          </span>
+        </div>
+      </div>
+      <div class="card">
+        <span class="card__auth">Sign Up</span>
+        <span class="card__auth card__auth--logIn">Log In</span>
+        <button class="card__button card__button--face">
+          <svg class="card__svg">
+            <use xlink:href="./images/sprite.svg#icon-facebook"></use>
+            <span class="btn-text">Facebook</span>
+          </svg>
+        </button>
+        <button class="card__button card__button--gmail">
+          <svg class="card__svg">
+            <use xlink:href="./images/sprite.svg#icon-google-plus"></use>
+          </svg>
+          <span class="btn-text">Google</span>
+        </button>
+        <span class="card__alternative">or</span>
+        <form action="" class="card__form">
+          <input placeholder="Name" type="text" class="card__formInput" />
+          <input placeholder="Last Name" type="text" class="card__formInput" />
+          <input placeholder="Email" type="text" class="card__formInput" />
+          <input
+            placeholder="Choose password"
+            type="text"
+            class="card__formInput"
+          />
+          <input
+            placeholder="Confirm Password"
+            type="text"
+            class="card__formInput"
+          />
+          <input id="agree" type="checkbox" class="card__formCheckbox" />
+          <label for="agree"
+            >Agree our
+            <a class="checkboxLink" href="#">Terms & Conditions</a></label
+          >
+          <button class="card__confirmButton">Create Account</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
