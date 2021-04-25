@@ -1,0 +1,178 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main {
+  background-color: rgb(18, 34, 58);
+  height: 100vh;
+  width: 100%;
+  padding: 24px 30px 28px 22px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  text-transform: uppercase;
+  font-family: "Arimo", sans-serif;
+}
+.table th {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.row-head th {
+  height: 70px;
+}
+.row-prices td {
+  height: 86px;
+  text-align: center;
+}
+.table th,
+.table td {
+  width: 25%;
+  text-align: center;
+  position: relative;
+}
+
+.table td:nth-child(n + 2)::after,
+.row-head th:nth-child(n + 2)::after,
+.row-prices th:nth-child(n + 1)::after {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    -90deg,
+    rgba(4, 6, 10, 0.15759807340905108) 0%,
+    rgba(242, 242, 242, 0.6842087176667542) 100%
+  );
+  opacity: 0.5;
+}
+.row-head th:nth-child(1) {
+  color: rgb(72, 72, 72);
+}
+.row-head th:nth-child(2) {
+  background-color: #89c331;
+}
+.row-head th:nth-child(3) {
+  background-color: #f04a56;
+}
+.row-head th:nth-child(4) {
+  background-color: #20807c;
+}
+
+.thead-title-1 {
+  font-size: 18px;
+  display: block;
+}
+.thead-title-2 {
+  font-size: 30px;
+}
+.price-high {
+  font-size: 4rem;
+  color: rgb(72, 72, 72);
+  font-weight: bold;
+  display: inline-block;
+}
+.measure {
+  font-size: 18px;
+  color: rgb(72, 72, 72);
+  font-weight: normal;
+  display: block;
+}
+.price-low {
+  font-size: 24px;
+  color: rgb(72, 72, 72);
+  font-weight: bold;
+  text-align: left;
+  display: block;
+}
+.price-info {
+  display: inline-block;
+}
+.fas {
+  color: #848484;
+  margin-right: 12px;
+}
+.tbody tr:nth-child(2n) {
+  background-color: #e3e3e3;
+}
+.tbody tr:nth-child(2n-1) {
+  background-color: #f2f2f2;
+}
+.tbody {
+  font-size: 16px;
+  color: rgb(72, 72, 72);
+}
+
+.button {
+  width: 68%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 200ms linear all;
+}
+.button:hover {
+  opacity: 0.6;
+  transform: scale(1.02);
+}
+.row-buttons > td:nth-child(1) > .button {
+  background: rgb(72, 72, 72);
+  background: linear-gradient(
+    180deg,
+    rgba(72, 72, 72, 1) 86%,
+    rgba(64, 64, 64, 1) 86%
+  );
+}
+.row-buttons > td:nth-child(2) > .button {
+  background: rgb(137, 195, 49);
+  background: linear-gradient(
+    180deg,
+    rgba(137, 195, 49, 1) 86%,
+    rgba(121, 176, 39, 1) 86%
+  );
+}
+.row-buttons > td:nth-child(3) > .button {
+  background: rgb(240, 74, 86);
+  background: linear-gradient(
+    180deg,
+    rgba(240, 74, 86, 1) 86%,
+    rgba(223, 58, 70, 1) 86%
+  );
+}
+.row-buttons > td:nth-child(4) > .button {
+  background: rgb(32, 128, 124);
+  background: linear-gradient(
+    180deg,
+    rgba(32, 128, 124, 1) 86%,
+    rgba(22, 115, 111, 1) 86%
+  );
+}
